@@ -12,7 +12,7 @@ class Model:
     def model(self, prompt, query):
 
         response = client.responses.create(
-        model=os.getenv("OPENAI_MODEL"),
+        model="gpt-4o-mini",
         input=[
         {"role": "system", "content": prompt},
         {"role": "user", "content": query}
